@@ -1,0 +1,39 @@
+@startuml
+
+class coche{
+    - marca : String
+    - modelo : String
+    - matrícula : String
+    - añoFabricación : String
+    + coche()
+    + coche (String marca, String modelo, String matricula, String añoFabricación)
+    + getMarca()
+    + getModelo()
+    + getMatricula()
+    + getAñoFabricacion()
+    + setMarca()
+    + setModelo()
+    + setMatricula()
+    + setAñoFabricacion()
+    + toString()
+}
+
+@startuml
+
+object coche1{
+    marca: "Volkswagen"
+    modelo: "Vocho"
+    matricula: "XXX-XXX"
+    añoFabricación: "2000"
+}
+
+@startuml
+
+object coche2{
+    marca: "Pato"
+    modelo: "Patto"
+    matricula: "XXS-XXS"
+    añoFabricación: "2024"
+}
+
+@enduml
